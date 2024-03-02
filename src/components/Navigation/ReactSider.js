@@ -15,11 +15,11 @@ class ReactSider extends Component {
           <Menu
             style={{ height: '100%', textAlign: 'center', paddingTop: '1rem' }}
           >
-            {/* Status updates */}
-            <Menu.Item key="trending-coins"><Link to='/trending-coins'>Trending Coins</Link></Menu.Item>
-            <br></br>
             {/* General updates */}
             <Menu.Item key="global-main"><Link to='/global'>Global Data</Link></Menu.Item>
+            <br></br>
+            {/* Status updates */}
+            <Menu.Item key="trending-coins"><Link to='/trending-coins'>Trending Coins</Link></Menu.Item>
             <br></br>
             {/* Coin Listing */}
             <Menu.Item key="coin-list"><Link to='/coins'>Coin Listing</Link></Menu.Item>

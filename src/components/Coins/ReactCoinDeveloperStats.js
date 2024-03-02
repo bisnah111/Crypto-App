@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Row, Card, Statistic, Col, Typography } from 'antd'
-import { colStyle, cardStyle, titleStyle } from '../../styles'
+import { colStyle, cardStyle } from '../../styles'
 
 export default class ReactCoinDeveloperStats extends Component {
   render () {

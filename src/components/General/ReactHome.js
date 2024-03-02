@@ -2,11 +2,8 @@ import React, { Component } from 'react'
 import { Layout, Typography, Card, Row, Col } from 'antd'
 import { contentStyle, colStyle } from '../../styles'
 import svg1 from '../../images/flaticon/001-bitcoin.svg'
-import svgExchangeRate from '../../images/flaticon/004-exchange.svg'
-import svgChat from '../../images/flaticon/001-chat.svg'
-import svgMobile from '../../images/flaticon/003-smartphone.svg'
-import svgUpdate from '../../images/flaticon/005-idea.svg'
-import svgWorldwide from '../../images/flaticon/worldwide.svg'
+import svgExchangeRate from '../../images/flaticon/002-exchange.svg'
+import svgUpdate from '../../images/flaticon/003-idea.svg'
 
 import { connect } from 'react-redux'
 import { setHeaderMenuItem } from '../../redux_actions'
@@ -31,7 +28,7 @@ const features = [
   {
     svg: svgUpdate,
     title: 'Updates',
-    description: 'App is continuously updated with the latest data, reflecting coingecko API.'
+    description: 'App is continuously updated with the latest data, reflecting Coingecko API.'
   }
 ]
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Layout, Menu } from 'antd'
 import { iconStyle, headerStyle } from '../../styles'
-import { HomeOutlined, InfoCircleOutlined, GithubOutlined, AreaChartOutlined } from '@ant-design/icons'
+import { InfoCircleOutlined, AreaChartOutlined } from '@ant-design/icons'
 import logoImage from '../../images/logo/logo.png'
 import { connect } from 'react-redux'
 import { setHeaderMenuItem } from '../../redux_actions'
@@ -28,7 +28,7 @@ class ReactHeader extends Component {
               </Link>
             </Menu.Item>
             <Menu.Item key="dashboard" onClick={() => this.props.setHeaderMenuItem('dashboard')}>
-              <Link to="/trending-coins" style={{ color: 'white' }}>
+              <Link to="/global" style={{ color: 'white' }}>
                 <AreaChartOutlined style={iconStyle}/>Dashboard
               </Link>
             </Menu.Item>

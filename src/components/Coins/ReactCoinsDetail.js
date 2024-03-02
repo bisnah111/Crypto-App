@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchCoinDetails, setSiderMenuItem, fetchCoinMarketDetails } from '../../redux_actions'
 import { Layout, Tag, Skeleton, Typography } from 'antd'
-import { contentStyle, titleStyle } from '../../styles'
+import { contentStyle } from '../../styles'
 import ReactCoinScores from './ReactCoinScores'
 import { Line } from 'react-chartjs-2'
 import { market_processed_table_keys, market_stat_keys } from '../../constants'
@@ -48,12 +48,9 @@ class ReactCoinsDetail extends Component {
       }, ...market_processed_table_keys.map(item => ({ title: item, key: item, dataIndex: item }))
     ]
 
-    const { coingecko_rank } = this.props.data
+    const { block_time_in_minutes } = this.props.data
     const { market_cap_rank } = this.props.data
-    const { developer_score } = this.props.data
-    const { community_score } = this.props.data
-    const { liquidity_score } = this.props.data
-    const { coingecko_score } = this.props.data
+    const { hashing_algorithm } = this.props.data
 
     const { community_data, developer_data } = this.props.data
 
@@ -100,12 +97,14 @@ class ReactCoinsDetail extends Component {
                 : <React.Fragment>
 
                   <ReactCoinDetailSummary
-                    name={ name }
-                    last_updated = { last_updated }
-                    image={ image }/>
+                    name={name}
+                    last_updated={last_updated}
+                    image={image}/>
 
                   <ReactCoinScores
-                    market_cap_rank={market_cap_rank}/>
+                    market_cap_rank={market_cap_rank}
+                    block_time_in_minutes={block_time_in_minutes}
+                    hashing_algorithm={hashing_algorithm}/>
 
                   <ReactCoinMarketStats
                     market_data={market_data}

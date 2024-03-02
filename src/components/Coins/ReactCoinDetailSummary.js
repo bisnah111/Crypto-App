@@ -17,7 +17,7 @@ export default class ReactCoinDetailSummary extends Component {
             style={{ marginRight: '1rem' }}/>
           { name }
         </Title>
-        <Paragraph>Last updated on <Tag color="green">{ last_updated }</Tag></Paragraph>
+        <Paragraph>Last updated on: <Tag color="green">{ last_updated }</Tag></Paragraph>
         <br></br>
         <Button style={{ marginBottom: '1rem' }}>
           <ArrowLeftOutlined/>

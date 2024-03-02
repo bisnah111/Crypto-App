@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Table, Tag, Layout, Typography, Button } from 'antd'
-import { Link } from 'react-router-dom'
 import { contentStyle, tableStyle } from '../../styles'
 import { connect } from 'react-redux'
 import ReactSider from '../Navigation/ReactSider'
